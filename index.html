@@ -4,403 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Privacidad - Worldwide App</title>
+    <meta name="description" content="Política de privacidad de Worldwide App (com.wfsa.app): datos que recopilamos, GPS, contactos, fotos, notificaciones y Firebase.">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-        }
-        h1 {
-            color: #0275AA;
-            border-bottom: 3px solid #0275AA;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #0275AA;
-            margin-top: 30px;
-        }
-        .fecha {
-            color: #666;
-            font-style: italic;
-            margin-bottom: 30px;
-        }
-        .highlight {
-            background-color: #E3F2FD;
-            padding: 15px;
-            border-left: 4px solid #0275AA;
-            margin: 20px 0;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .contacto {
-            background-color: #f5f5f5;
-            padding: 20px;
-            border-radius: 5px;
-            margin-top: 30px;
-        }
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+        h1 { color: #0275AA; border-bottom: 3px solid #0275AA; padding-bottom: 10px; }
+        h2 { color: #0275AA; margin-top: 30px; }
+        h3 { margin-top: 20px; }
+        .fecha { color: #666; font-style: italic; margin-bottom: 24px; }
+        .highlight { background-color: #E3F2FD; padding: 15px; border-left: 4px solid #0275AA; margin: 20px 0; }
+        ul { margin-left: 20px; }
+        li { margin-bottom: 8px; }
+        .contacto { background-color: #f5f5f5; padding: 20px; border-radius: 5px; margin-top: 30px; }
+        a { color: #0275AA; }
+        .small { color: #666; font-size: 12px; text-align: center; }
+        table { border-collapse: collapse; width: 100%; margin: 12px 0 20px; font-size: 14px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+        th { background: #E3F2FD; }
     </style>
 </head>
 <body>
-    <h1>Política de Privacidad - Worldwide App</h1>
-    <p class="fecha">Última actualización: 20 de enero de 2025</p>
+    <h1>Política de Privacidad — Worldwide App</h1>
+    <p class="fecha">Última actualización: 5 de septiembre de 2026 · Paquete Android: <code>com.wfsa.app</code></p>
 
     <div class="highlight">
-        <p><strong>Worldwide App</strong> es una aplicación móvil empresarial desarrollada por Worldwide Facility para la gestión y monitoreo de servicios de seguridad. Nos comprometemos a proteger la privacidad de nuestros usuarios.</p>
+        <p><strong>Worldwide App</strong> es una aplicación móvil empresarial de Worldwide Facility para la gestión de servicios de seguridad (cobertura, visitas, encuestas, documentos, mensajería y tareas). El uso está limitado a personas autorizadas (empleados, contratistas o clientes) con cuenta propia. No está dirigida a menores de 18 años ni a público general.</p>
     </div>
 
-    <h2>1. Información que Recopilamos</h2>
-    
-    <h3>1.1 Información de Cuenta (almacenada)</h3>
+    <p>Esta política describe qué datos trata la app, para qué, dónde se almacenan y cómo ejercer tus derechos. Complementa la sección <strong>Seguridad de los datos</strong> de Google Play.</p>
+    <p>Página de soporte: <a href="support.html">Soporte</a>.</p>
+
+    <h2>1. Responsable</h2>
     <ul>
-        <li><strong>Email:</strong> Utilizado como identificador único y para autenticación</li>
-        <li><strong>Firebase UID:</strong> Identificador único de Firebase Authentication</li>
-        <li><strong>Nombre completo:</strong> Para identificación dentro del sistema</li>
-        <li><strong>Cliente/Empresa:</strong> Cliente al que pertenece el usuario</li>
-        <li><strong>Rol:</strong> Tipo de usuario (Cliente, Supervisor WFSA, Subgerente WFSA, Jefe WFSA, Gerente WFSA, Administrador WFSA)</li>
-        <li><strong>Cargo:</strong> Puesto del usuario en la empresa (opcional)</li>
-        <li><strong>Teléfono:</strong> Número de contacto (opcional)</li>
-        <li><strong>Estado de cuenta:</strong> Si la cuenta está activa o inactiva</li>
-        <li><strong>Permisos de instalaciones:</strong> Qué instalaciones puede visualizar el usuario</li>
-        <li><strong>Fecha de creación:</strong> Cuándo se creó la cuenta</li>
-        <li><strong>Última sesión:</strong> Última vez que el usuario inició sesión</li>
-        <li><strong>FCM Token:</strong> Token de notificaciones push para enviar alertas (opcional)</li>
+        <li><strong>Empresa:</strong> Worldwide Facility</li>
+        <li><strong>Dirección:</strong> Sexta Avenida 1236, San Miguel, Santiago, Chile</li>
+        <li><strong>Contacto de privacidad:</strong> <a href="mailto:diego.varela@wfsa.cl">diego.varela@wfsa.cl</a></li>
     </ul>
 
-    <h3>1.2 Información de Encuestas de Satisfacción (almacenada)</h3>
+    <h2>2. Datos que recopilamos</h2>
+    <p>Solo tratamos datos necesarios para el servicio laboral. No vendemos datos ni los usamos para publicidad.</p>
+
+    <table>
+        <thead>
+            <tr><th>Dato</th><th>Cuándo</th><th>¿Sale del dispositivo?</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Email, contraseña, nombre, rol, cargo, cliente/empresa</td><td>Al crear o usar la cuenta</td><td>Sí (Firebase Auth, Firestore, BigQuery)</td></tr>
+            <tr><td>Identificador de usuario (Firebase UID)</td><td>Al autenticarte</td><td>Sí</td></tr>
+            <tr><td>Token de notificaciones (FCM)</td><td>Tras el login, si aceptas notificaciones</td><td>Sí (backend / Firestore)</td></tr>
+            <tr><td>Ubicación aproximada y precisa (GPS)</td><td>Al registrar una visita, responder ciertas encuestas o adjuntar evidencia de una subtarea</td><td>Sí (coordenadas y precisión)</td></tr>
+            <tr><td>Contactos (Android)</td><td>Solo perfiles de documentos: se busca el contacto llamado «Yo» para el número del equipo</td><td>Sí: el número, no la agenda completa</td></tr>
+            <tr><td>Número de teléfono</td><td>Del contacto «Yo», o ingresado a mano</td><td>Sí (header a la API) y caché local</td></tr>
+            <tr><td>Fotos y archivos</td><td>Cuando tú los eliges (mensajes, visitas, tareas, encuestas)</td><td>Sí (Firebase Storage)</td></tr>
+            <tr><td>Mensajes internos</td><td>Chat de la app</td><td>Sí (Firestore)</td></tr>
+            <tr><td>Restore Credentials (Android)</td><td>Tras login, para reabrir sesión en un teléfono nuevo</td><td>Sí (Google Credential Manager + nuestro backend)</td></tr>
+        </tbody>
+    </table>
+
+    <h3>2.1 Cuenta y perfil</h3>
+    <p>Email (identificador de acceso), Firebase UID, nombre, rol, cargo, teléfono de contacto, cliente/empresa, permisos de instalaciones, fechas de alta y última sesión, y estado de la cuenta.</p>
+
+    <h3>2.2 Ubicación GPS</h3>
+    <p>La app pide ubicación <strong>en el momento</strong> de usar visitas a terreno, encuestas que lo requieran (no aplica a perfiles de tipo cliente) y evidencias de tareas. Se envían latitud, longitud y precisión para comprobar que estás cerca de la instalación. <strong>No rastreamos tu ubicación en segundo plano</strong> ni de forma continua. Si niegas el permiso, esas funciones no se pueden completar.</p>
+
+    <h3>2.3 Contactos y teléfono (Android)</h3>
+    <p>Con el permiso de contactos, algunos roles (<code>DOCUMENTOS_WFSA</code>) leen únicamente el contacto cuyo nombre es «Yo», habitual en los equipos de trabajo, para asociar el número del aparato a las carpetas de documentos. No sincronizamos tu agenda. El número puede guardarse en el teléfono (preferencias) y enviarse al servidor. En iOS no leemos contactos.</p>
+
+    <h3>2.4 Fotos, cámara y archivos</h3>
+    <p>Solo accedemos a fotos o archivos que <strong>tú eliges</strong> para mensajes, visitas, encuestas o tareas. Las imágenes se pueden comprimir antes de subirlas a Firebase Storage.</p>
+
+    <h3>2.5 Mensajería y notificaciones</h3>
+    <p>Conversaciones, participantes, texto, adjuntos, estado de lectura y presencia (en línea / última vez). El token FCM identifica el dispositivo para avisos de mensajes, encuestas y otras alertas laborales. Puedes desactivar las notificaciones en el sistema.</p>
+
+    <h3>2.6 Caché local y copias de seguridad</h3>
+    <p>En el dispositivo se guardan preferencias (tema, tamaño de texto), caché de permisos y, en Android, el número de equipo si se obtuvo. Android puede incluir preferencias en una copia de seguridad o al transferir el teléfono. Limitamos el respaldo automático de esas preferencias para no subir el número de equipo a la nube de Google; Restore Credentials usa Credential Manager, no esa copia.</p>
+
+    <h3>2.7 Restore Credentials (Android 9+)</h3>
+    <p>Tras un login con email y contraseña, la app puede crear una clave de restauración en Google Credential Manager (con copia en la cuenta de Google si el sistema lo permite) y registrarla en nuestro backend. Sirve para recuperar la sesión en un dispositivo nuevo sin volver a escribir la contraseña. No sustituye tu email/contraseña de Firebase.</p>
+
+    <h3>2.8 Lo que no recopilamos</h3>
     <ul>
-        <li><strong>Respuestas de encuestas:</strong> Calificaciones y comentarios sobre servicios de seguridad</li>
-        <li><strong>Fecha de respuesta:</strong> Cuándo el usuario respondió la encuesta</li>
-        <li><strong>Instalación evaluada:</strong> Sede o instalación específica evaluada</li>
-        <li><strong>Tipo de encuesta:</strong> General (para todos) o individual (para usuarios específicos)</li>
-        <li><strong>Identificación del usuario:</strong> Email del usuario que respondió la encuesta</li>
+        <li>IMEI ni identificador de telefonía (<code>READ_PHONE_STATE</code> no se usa)</li>
+        <li>SMS, llamadas, calendario, micrófono, datos biométricos, pagos o redes sociales</li>
+        <li>Publicidad, analítica de marketing ni SDKs de anuncios</li>
+        <li>Historial de navegación (el WebView no se usa para recopilar páginas visitadas)</li>
     </ul>
 
-    <h3>1.3 Información de Uso (almacenada temporalmente)</h3>
+    <h2>3. Para qué los usamos</h2>
     <ul>
-        <li><strong>Token de sesión:</strong> Token temporal de Firebase para mantener la sesión activa</li>
-        <li><strong>Caché local:</strong> Datos temporales de permisos y cobertura (se elimina automáticamente cada 24 horas)</li>
+        <li><strong>Autenticación y control de acceso</strong> según rol e instalaciones</li>
+        <li><strong>Operación:</strong> cobertura, visitas, encuestas, documentos, tareas, reclutamiento y GPS de radios cuando el perfil lo permite</li>
+        <li><strong>Comunicación laboral:</strong> mensajería interna y notificaciones push</li>
+        <li><strong>Seguridad de la cuenta:</strong> Restore Credentials en Android</li>
+        <li><strong>Mejora del servicio:</strong> análisis interno de encuestas y operación (no publicidad)</li>
+    </ul>
+    <p>No usamos los datos para anuncios, no los vendemos y no perfilamos con fines comerciales.</p>
+
+    <h2>4. Dónde se almacenan y con quién se tratan</h2>
+    <p>Usamos Google como encargado del tratamiento (infraestructura), no como comprador de tus datos:</p>
+    <ul>
+        <li><strong>Firebase Authentication, Cloud Firestore, Cloud Storage, Cloud Messaging</strong></li>
+        <li><strong>Google Cloud:</strong> Cloud Run (API), BigQuery</li>
+        <li><strong>Google Play services:</strong> Credential Manager / Restore Credentials y, si el sistema lo hace, copias o transferencias del dispositivo</li>
+    </ul>
+    <p>Las comunicaciones van por HTTPS. El acceso en nuestros sistemas está limitado por roles (RBAC) y reglas de Firestore.</p>
+    <p>Podemos comunicar datos si lo exige la ley o para proteger derechos de Worldwide Facility, usuarios o terceros.</p>
+
+    <h2>5. Conservación</h2>
+    <ul>
+        <li><strong>Cuenta y operación:</strong> mientras la cuenta esté activa y según obligaciones laborales/contractuales</li>
+        <li><strong>Encuestas, visitas y evidencias:</strong> se conservan para historial operativo</li>
+        <li><strong>Mensajes y adjuntos:</strong> mientras exista la conversación o la cuenta</li>
+        <li><strong>Token FCM:</strong> se actualiza o elimina al cerrar sesión, desactivar la cuenta o desinstalar (en la medida técnica posible)</li>
+        <li><strong>Caché local:</strong> se limpia al cerrar sesión en lo que la app controla</li>
     </ul>
 
-    <h3>1.4 Información de Mensajería Interna (almacenada)</h3>
-    <p>La aplicación incluye un módulo de mensajería interna que permite la comunicación entre usuarios autorizados:</p>
+    <h2>6. Permisos del sistema</h2>
     <ul>
-        <li><strong>Conversaciones:</strong> 
-            <ul>
-                <li>Identificadores de conversaciones creadas por los usuarios</li>
-                <li>Título de la conversación (obligatorio)</li>
-                <li>Instalación asociada a la conversación</li>
-                <li>Tipo de conversación (problema o seguimiento)</li>
-                <li>Participantes de la conversación (usuarios autorizados)</li>
-                <li>Estado de archivado (solo para roles administrativos)</li>
-                <li>Fecha de creación y última actualización</li>
-            </ul>
-        </li>
-        <li><strong>Mensajes:</strong> 
-            <ul>
-                <li>Contenido de los mensajes enviados por los usuarios</li>
-                <li>Fecha, hora y remitente de cada mensaje</li>
-                <li>Estado de lectura (leído/no leído por cada participante)</li>
-                <li>Visibilidad para clientes (control de visibilidad por roles administrativos)</li>
-                <li>Estado de entrega (enviado, entregado, leído, error)</li>
-            </ul>
-        </li>
-        <li><strong>Archivos adjuntos:</strong> 
-            <ul>
-                <li>Imágenes: Fotos compartidas en conversaciones (comprimidas automáticamente)</li>
-                <li>Documentos: Archivos PDF, Word, Excel, texto y otros formatos</li>
-                <li>Metadatos: Nombre del archivo, tamaño, tipo MIME</li>
-                <li>URLs de acceso: Enlaces seguros para descargar los archivos desde Firebase Storage</li>
-            </ul>
-        </li>
-        <li><strong>Presencia y estado de conexión:</strong> 
-            <ul>
-                <li>Estado online/offline de los usuarios (actualizado en tiempo real)</li>
-                <li>Última vez visto (timestamp de última actividad)</li>
-                <li>Esta información se sincroniza automáticamente con Firestore al iniciar sesión</li>
-            </ul>
-        </li>
-        <li><strong>Conservación:</strong> Los mensajes y conversaciones se conservan mientras la cuenta esté activa. Los usuarios con permisos administrativos pueden archivar conversaciones.</li>
+        <li><strong>Ubicación</strong> — visitas, encuestas georreferenciadas y evidencias de tareas</li>
+        <li><strong>Contactos (Android)</strong> — número del contacto «Yo» en perfiles de documentos</li>
+        <li><strong>Cámara / fotos / archivos</strong> — adjuntos que tú eliges</li>
+        <li><strong>Notificaciones</strong> — avisos laborales</li>
+        <li><strong>Red</strong> — funcionamiento de la app</li>
     </ul>
 
-    <h3>1.5 Funcionalidades Futuras (Próximamente)</h3>
-    <p>Las siguientes funcionalidades están en desarrollo y podrían requerir datos adicionales:</p>
-    <ul>
-        <li><strong>Integración con Takary (sistema de asistencia):</strong>
-            <ul>
-                <li>Ubicación GPS del usuario en tiempo real (solo durante servicio activo)</li>
-                <li>Coordenadas de llegada/salida de instalaciones</li>
-                <li>Registro de ruta durante turno de trabajo</li>
-                <li>Este permiso será <strong>opcional</strong> y solo se solicitará si el usuario activa esta funcionalidad</li>
-            </ul>
-        </li>
-    </ul>
+    <h2>7. Tus derechos</h2>
+    <p>Puedes pedir acceso, rectificación, supresión, oposición o limitación del tratamiento, y portabilidad cuando corresponda, conforme a la <strong>Ley N° 21.719</strong> sobre Protección de Datos Personales (Chile). Escríbenos a <a href="mailto:diego.varela@wfsa.cl">diego.varela@wfsa.cl</a>. La eliminación de la cuenta la gestiona el administrador; no hay un botón de borrado total dentro de la app porque es una herramienta de trabajo.</p>
 
-    <p><strong>Nota importante:</strong> Cuando estas funcionalidades estén disponibles, se te notificará en la app y se solicitarán los permisos correspondientes antes de activarlas. Podrás elegir si deseas usarlas o no.</p>
+    <h2>8. Menores</h2>
+    <p>La app es solo para mayores de 18 años con cuenta corporativa. No recopilamos datos de menores a sabiendas.</p>
 
-    <h3>1.6 Datos que NO Recopilamos (Actualmente)</h3>
-    <ul>
-        <li>❌ Ubicación GPS (excepto futura integración opcional con Takary)</li>
-        <li>❌ Contactos del teléfono (solo se accede a contactos autorizados del sistema empresarial)</li>
-        <li>❌ Historial de navegación web</li>
-        <li>❌ Datos biométricos</li>
-        <li>❌ Mensajes SMS o llamadas telefónicas</li>
-        <li>❌ Fotos o archivos multimedia del dispositivo (solo se accede a archivos seleccionados explícitamente por el usuario para compartir)</li>
-        <li>❌ Información de pago o tarjetas</li>
-        <li>❌ Datos de redes sociales</li>
-        <li>❌ Información de otras aplicaciones</li>
-    </ul>
+    <h2>9. Seguridad de tus credenciales</h2>
+    <p>Eres responsable de no compartir email ni contraseña. La actividad hecha con tu cuenta se atribuye a esa cuenta.</p>
 
-    <h2>2. Cómo Utilizamos la Información</h2>
-    
-    <h3>2.1 Uso Actual</h3>
-    <p>Utilizamos la información recopilada <strong>exclusivamente</strong> para:</p>
-    <ul>
-        <li><strong>Autenticación:</strong> Verificar la identidad del usuario mediante Firebase</li>
-        <li><strong>Control de acceso:</strong> Determinar qué pantallas e instalaciones puede ver cada usuario según su rol</li>
-        <li><strong>Visualización de datos:</strong> Mostrar información de cobertura de las instalaciones asignadas</li>
-        <li><strong>Identificación:</strong> Mostrar el nombre del usuario en la pantalla de perfil</li>
-        <li><strong>Caché temporal:</strong> Almacenar permisos localmente para mejorar el rendimiento (se elimina cada 24 horas)</li>
-        <li><strong>Encuestas de satisfacción:</strong> 
-            <ul>
-                <li>Generar encuestas periódicas (cada 2 meses) para evaluar servicios</li>
-                <li>Recopilar respuestas y comentarios de usuarios autorizados</li>
-                <li>Analizar tendencias de satisfacción por instalación</li>
-                <li>Generar reportes para mejoramiento continuo del servicio</li>
-            </ul>
-        </li>
-        <li><strong>Notificaciones push:</strong> 
-            <ul>
-                <li>Enviar alertas sobre nuevas encuestas disponibles</li>
-                <li>Notificar recordatorios de encuestas pendientes</li>
-                <li>Notificar sobre nuevos mensajes en conversaciones</li>
-                <li>Solo se envían de lunes a viernes entre 9:00 y 18:00 horas (para encuestas)</li>
-                <li>Las notificaciones de mensajería se envían en tiempo real</li>
-                <li>El usuario puede desactivar las notificaciones en cualquier momento</li>
-            </ul>
-        </li>
-        <li><strong>Mensajería interna:</strong> 
-            <ul>
-                <li>Permitir comunicación entre usuarios autorizados dentro del sistema</li>
-                <li>Crear conversaciones grupales por instalación</li>
-                <li>Enviar mensajes de texto, imágenes y documentos</li>
-                <li>Control de visibilidad de mensajes para clientes (por roles administrativos)</li>
-                <li>Archivar conversaciones (solo para roles administrativos)</li>
-                <li>Mantener historial de mensajes para auditoría y seguimiento</li>
-                <li>Mostrar estado de presencia (online/offline) de participantes</li>
-                <li>Notificar a destinatarios sobre nuevos mensajes mediante push notifications</li>
-            </ul>
-        </li>
-    </ul>
+    <h2>10. Cambios</h2>
+    <p>Si el tratamiento cambia de forma relevante, actualizaremos esta página y la fecha superior. El uso continuado de la app implica que conoces la versión publicada.</p>
 
-    <h3>2.2 Uso Futuro (Funcionalidades en Desarrollo)</h3>
-    <ul>
-        <li><strong>Integración Takary (Control de asistencia):</strong>
-            <ul>
-                <li>Verificar que el guardia esté en la ubicación correcta al marcar asistencia</li>
-                <li>Registrar hora y lugar de llegada/salida de instalaciones</li>
-                <li>Generar reportes de cumplimiento de rutas</li>
-                <li><strong>Importante:</strong> La ubicación SOLO se usa durante el turno de trabajo activo, no en segundo plano</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h3>2.3 Lo que NO hacemos con tus datos</h3>
-    <ul>
-        <li>❌ NO vendemos ni compartimos datos con terceros comerciales</li>
-        <li>❌ NO usamos datos para publicidad o marketing</li>
-        <li>❌ NO rastreamos tu ubicación fuera del horario de trabajo (cuando Takary esté activo)</li>
-        <li>❌ NO accedemos a tus contactos, fotos o archivos personales</li>
-        <li>❌ NO enviamos spam o notificaciones no relacionadas con tu trabajo</li>
-        <li>❌ NO compartimos datos entre clientes diferentes</li>
-        <li>❌ NO usamos tus datos para perfilamiento o análisis de comportamiento personal</li>
-    </ul>
-
-    <h2>3. Almacenamiento y Seguridad</h2>
-    
-    <h3>3.1 Dónde se Almacenan los Datos</h3>
-    <ul>
-        <li><strong>Firebase Authentication:</strong> Gestión de usuarios y autenticación</li>
-        <li><strong>Google Cloud BigQuery:</strong> Almacenamiento de datos de cobertura, usuarios y permisos</li>
-        <li><strong>Cloud Firestore:</strong> Base de datos en tiempo real para:
-            <ul>
-                <li>Conversaciones y mensajes de la aplicación</li>
-                <li>Información de usuarios sincronizada (UID, email, rol, etc.)</li>
-                <li>Estado de presencia online/offline de usuarios</li>
-                <li>Última vez visto de cada usuario</li>
-            </ul>
-        </li>
-        <li><strong>Firebase Storage:</strong> Almacenamiento de archivos adjuntos:
-            <ul>
-                <li>Imágenes compartidas en conversaciones (comprimidas y con thumbnails)</li>
-                <li>Documentos compartidos (PDF, Word, Excel, texto, etc.)</li>
-                <li>Acceso mediante URLs seguras con tokens de autenticación</li>
-            </ul>
-        </li>
-        <li><strong>Cloud Run:</strong> Servidor API para procesar solicitudes y enviar notificaciones push</li>
-        <li><strong>Dispositivo local:</strong> Caché temporal (24 horas) de permisos y datos de cobertura</li>
-    </ul>
-
-    <h3>3.2 Medidas de Seguridad</h3>
-    <ul>
-        <li>Autenticación mediante Firebase (cifrado de extremo a extremo)</li>
-        <li>Comunicaciones HTTPS cifradas</li>
-        <li>Tokens de sesión con expiración automática</li>
-        <li>Control de acceso basado en roles (RBAC)</li>
-        <li>Auditoría de acciones de usuarios</li>
-        <li>Infraestructura en Google Cloud Platform con certificaciones de seguridad</li>
-    </ul>
-
-    <h2>4. Compartir Información</h2>
-    
-    <p><strong>NO</strong> compartimos, vendemos ni divulgamos información personal a terceros, excepto en los siguientes casos:</p>
-    <ul>
-        <li><strong>Proveedores de servicios:</strong> Google Cloud Platform y Firebase (bajo acuerdos de confidencialidad)</li>
-        <li><strong>Requisitos legales:</strong> Si es requerido por ley, orden judicial o proceso legal</li>
-        <li><strong>Protección de derechos:</strong> Para proteger los derechos, propiedad o seguridad de WFSA, usuarios o el público</li>
-    </ul>
-
-    <h2>5. Retención de Datos</h2>
-    
-    <h3>5.1 Datos Actuales</h3>
-    <ul>
-        <li><strong>Datos de cuenta (BigQuery):</strong> Se mantienen mientras la cuenta esté activa. Cuando se desactiva una cuenta, los datos permanecen en el sistema pero el usuario no puede acceder</li>
-        <li><strong>Tokens de sesión (Firebase):</strong> Expiran automáticamente y se renuevan periódicamente</li>
-        <li><strong>Respuestas de encuestas:</strong> Se conservan para análisis histórico y mejoramiento continuo del servicio</li>
-        <li><strong>FCM Tokens:</strong> Se eliminan automáticamente cuando el usuario desinstala la aplicación o se desactiva la cuenta</li>
-        <li><strong>Caché local en dispositivo:</strong> 
-            <ul>
-                <li>Permisos: Máximo 24 horas, luego se eliminan automáticamente</li>
-                <li>Datos de cobertura: Máximo 5 minutos, luego se refrescan</li>
-                <li>Todo se elimina completamente al cerrar sesión</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h3>5.2 Datos de Mensajería</h3>
-    <ul>
-        <li><strong>Conversaciones y mensajes (Firestore):</strong> Se conservan mientras la cuenta esté activa y la conversación no haya sido archivada</li>
-        <li><strong>Archivos adjuntos (Firebase Storage):</strong> Se conservan mientras la conversación exista. Se eliminan automáticamente si la conversación es eliminada</li>
-        <li><strong>Estado de presencia (Firestore):</strong> Se actualiza en tiempo real y se conserva mientras el usuario esté activo</li>
-        <li><strong>Información de usuarios sincronizada (Firestore):</strong> Se sincroniza automáticamente al iniciar sesión y se actualiza cuando cambian los permisos</li>
-    </ul>
-
-    <h3>5.3 Datos Futuros (cuando se implementen)</h3>
-    <ul>
-        <li><strong>Datos de ubicación (Takary):</strong> 
-            <ul>
-                <li>Ubicación en tiempo real: NO se almacena, solo se verifica en el momento</li>
-                <li>Registro de asistencia (hora/lugar): Se conserva según requisitos laborales y legales (mínimo 5 años por ley laboral chilena)</li>
-                <li>Estos datos son necesarios para verificación de cumplimiento de turnos</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h2>6. Responsabilidad del Usuario</h2>
-    
-    <h3>6.1 Seguridad de Credenciales</h3>
-    <p>El usuario es <strong>completamente responsable</strong> de:</p>
-    <ul>
-        <li><strong>Mantener la confidencialidad de sus credenciales:</strong> Email y contraseña de acceso</li>
-        <li><strong>No compartir sus credenciales:</strong> Con terceros, compañeros de trabajo, familiares o cualquier persona no autorizada</li>
-        <li><strong>Cambiar inmediatamente la contraseña:</strong> Si sospecha que sus credenciales han sido comprometidas</li>
-        <li><strong>Reportar uso no autorizado:</strong> Contactar inmediatamente al administrador del sistema si detecta actividad sospechosa en su cuenta</li>
-        <li><strong>Cerrar sesión correctamente:</strong> Especialmente en dispositivos compartidos o públicos</li>
-    </ul>
-
-    <div class="highlight">
-        <p><strong>⚠️ IMPORTANTE:</strong> Cualquier actividad realizada con sus credenciales será atribuida al titular de la cuenta. WFSA no se hace responsable por el uso indebido de credenciales que hayan sido compartidas o comprometidas por negligencia del usuario.</p>
-    </div>
-
-    <h3>6.2 Uso Apropiado del Sistema</h3>
-    <ul>
-        <li><strong>Acceso autorizado:</strong> Solo utilizar la aplicación para fines laborales relacionados con Worldwide Field Service</li>
-        <li><strong>Respuestas honestas:</strong> En las encuestas de satisfacción, proporcionar información veraz y constructiva</li>
-        <li><strong>Respeto y profesionalismo:</strong> Mantener un lenguaje apropiado en comentarios y respuestas</li>
-        <li><strong>No compartir información confidencial:</strong> Los datos de la aplicación son confidenciales y no deben compartirse fuera del ámbito laboral</li>
-    </ul>
-
-    <h2>7. Derechos del Usuario</h2>
-    
-    <p>Los usuarios tienen derecho a:</p>
-    <ul>
-        <li><strong>Acceder:</strong> Solicitar una copia de sus datos personales</li>
-        <li><strong>Rectificar:</strong> Corregir datos inexactos o incompletos</li>
-        <li><strong>Eliminar:</strong> Solicitar la eliminación de su cuenta y datos asociados</li>
-        <li><strong>Limitar:</strong> Restringir el procesamiento de sus datos</li>
-        <li><strong>Portabilidad:</strong> Recibir sus datos en formato estructurado</li>
-        <li><strong>Oponerse:</strong> Rechazar ciertos usos de sus datos</li>
-    </ul>
-
-    <p>Para ejercer estos derechos, contacte con el administrador del sistema.</p>
-
-    <h2>8. Uso por Menores de Edad</h2>
-    
-    <p>Worldwide App es una aplicación empresarial destinada exclusivamente a <strong>usuarios mayores de 18 años</strong> que son empleados o clientes de Worldwide Field Service. No recopilamos intencionalmente información de menores de edad.</p>
-
-    <h2>9. Cookies y Tecnologías Similares</h2>
-    
-    <p>La aplicación utiliza:</p>
-    <ul>
-        <li><strong>SharedPreferences:</strong> Para almacenar caché local de permisos (24 horas)</li>
-        <li><strong>Tokens de sesión:</strong> Para mantener la autenticación del usuario</li>
-        <li><strong>Firebase Cloud Messaging (FCM):</strong> Para enviar notificaciones push sobre encuestas disponibles y mensajes nuevos</li>
-        <li><strong>FCM Token:</strong> Identificador único para recibir notificaciones en el dispositivo específico</li>
-    </ul>
-
-    <p>Estos datos se almacenan únicamente en el dispositivo del usuario y se eliminan al cerrar sesión. El FCM Token se almacena en nuestros servidores solo para enviar notificaciones relacionadas con la aplicación.</p>
-
-    <h2>10. Cambios a Esta Política</h2>
-    
-    <p>Podemos actualizar esta Política de Privacidad periódicamente. Los cambios significativos serán notificados mediante:</p>
-    <ul>
-        <li>Actualización de la fecha "Última actualización" en la parte superior</li>
-        <li>Notificación dentro de la aplicación</li>
-        <li>Email a usuarios registrados (para cambios importantes)</li>
-    </ul>
-
-    <h2>11. Cumplimiento Legal</h2>
-    
-    <p>Esta política cumple con:</p>
-    <ul>
-        <li>Ley N° 19.628 sobre Protección de la Vida Privada (Chile)</li>
-        <li>Reglamento General de Protección de Datos (GDPR) - aplicable a usuarios en la UE</li>
-        <li>Políticas de Google Play Store</li>
-        <li>Términos de servicio de Google Cloud Platform y Firebase</li>
-    </ul>
-
-    <h2>12. Jurisdicción</h2>
-    
-    <p>Esta política se rige por las leyes de Chile. Cualquier disputa relacionada con la privacidad de datos será resuelta en los tribunales competentes de Santiago, Chile.</p>
+    <h2>11. Ley aplicable</h2>
+    <p>Se rige por las leyes de Chile. Disputas: tribunales de Santiago, Chile.</p>
 
     <div class="contacto">
-        <h2>13. Contacto</h2>
-        <p>Si tiene preguntas, inquietudes o solicitudes sobre esta Política de Privacidad o el tratamiento de sus datos personales, puede contactarnos:</p>
-        <ul>
-            <li><strong>Empresa:</strong> Worldwide Facility</li>
-            <li><strong>Email:</strong> diego.varela@wfsa.cl</li>
-            <li><strong>Teléfono:</strong> Disponible mediante solicitud por email</li>
-            <li><strong>Dirección:</strong> Sexta Avenida 1236, San Miguel, Santiago, Chile</li>
-        </ul>
-        <p><strong>Responsable de Protección de Datos:</strong> Diego Varela</p>
+        <h2>12. Contacto</h2>
+        <p>Worldwide Facility · Sexta Avenida 1236, San Miguel, Santiago, Chile<br>
+        Email: <a href="mailto:diego.varela@wfsa.cl">diego.varela@wfsa.cl</a><br>
+        Soporte de la app: <a href="support.html">Soporte</a></p>
     </div>
 
-    <h2>Enlaces</h2>
-    <ul>
-        <li><a href="./support.html">Soporte</a></li>
-        <li><a href="./index.html">Política de Privacidad</a></li>
-    </ul>
-
     <hr style="margin-top: 40px; border: none; border-top: 1px solid #ddd;">
-    <p style="text-align: center; color: #666; font-size: 12px;">
-        © 2025 Worldwide Facility. Todos los derechos reservados.<br>
-        Worldwide App - Versión 1.0.0
-    </p>
+    <p class="small">© 2026 Worldwide Facility. Worldwide App.</p>
 </body>
 </html>

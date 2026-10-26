@@ -1,0 +1,97 @@
+Texto para pegar en Play Console → Contenido de la app → Seguridad de los datos
+App: Worldwide (com.wfsa.app)
+Fecha: 5 de septiembre de 2026
+Política: https://portal.wfsa.cl/privacidad.html
+Soporte: https://portal.wfsa.cl/soporte.html
+
+================================================================
+Preguntas generales
+================================================================
+¿Tu app recopila o comparte alguno de los tipos de datos de usuario requeridos?
+  SÍ
+
+¿Todos los datos de usuario recopilados por tu app están cifrados en tránsito?
+  SÍ  (HTTPS)
+
+¿Proporcionas una forma de que los usuarios soliciten que se eliminen sus datos?
+  SÍ  — por email a diego.varela@wfsa.cl / administrador de la cuenta.
+  No hay borrado self-service in-app (app empresarial).
+
+¿Se venden los datos?
+  NO
+
+¿La app está dirigida a niños?
+  NO  (mayores de 18, cuenta corporativa)
+
+================================================================
+Tipos de datos — marcar RECOPILADA (no compartida / no vendida)
+Google Firebase, Cloud Run y BigQuery son encargados (procesan para nosotros).
+En Play, eso suele declararse como RECOPILADA, no como “compartida con terceros”,
+salvo que tu criterio interno trate a Google como tercero. Recomendación: Recopilada, no compartida, no vendida.
+================================================================
+
+UBICACIÓN
+- Ubicación aproximada
+- Ubicación precisa
+  Recopilada: SÍ
+  Compartida: NO
+  Procesada de forma efímera: NO (se guarda con la visita/encuesta/tarea)
+  Obligatoria / no se puede desactivar para esas funciones: SÍ (si niega el permiso, no completa la acción)
+  Finalidades: Funcionalidad de la app
+  Notas: Solo al usar visitas, encuestas georreferenciadas (no perfil cliente) o evidencias de subtareas. No hay tracking en segundo plano.
+
+INFORMACIÓN PERSONAL
+- Nombre
+- Dirección de correo electrónico
+- ID de usuario (Firebase UID)
+- Número de teléfono
+  Recopilada: SÍ
+  Compartida: NO
+  Efímera: NO
+  Finalidades: Funcionalidad de la app + Gestión de cuentas
+  Teléfono: contacto «Yo» en Android (rol documentos) o ingreso manual; se envía a la API.
+
+FOTOS Y VÍDEOS
+- Fotos
+  Recopilada: SÍ (solo las que el usuario elige)
+  Compartida: NO
+  Finalidades: Funcionalidad de la app
+  Usuario puede desactivar: SÍ (no adjunta)
+
+ARCHIVOS Y DOCS
+- Archivos y documentos
+  Recopilada: SÍ (adjuntos de chat/tareas que el usuario elige)
+  Compartida: NO
+  Finalidades: Funcionalidad de la app
+
+CONTACTOS
+- Contactos
+  Recopilada: SÍ (Android: se lee el contacto llamado «Yo», no la agenda completa)
+  Compartida: NO
+  Finalidades: Funcionalidad de la app
+  Notas: Declarar Contactos porque existe READ_CONTACTS. iOS no lee contactos.
+
+MENSAJES
+- Mensajes in-app
+  Recopilada: SÍ
+  Compartida: NO
+  Finalidades: Funcionalidad de la app
+
+IDENTIFICADORES DEL DISPOSITIVO U OTROS
+- Identificadores del dispositivo u otros
+  Recopilada: SÍ  (token FCM; Restore Credentials en Android)
+  Compartida: NO
+  Finalidades: Funcionalidad de la app + Gestión de cuentas
+  NO declarar IMEI ni Android ID (no se envían).
+
+NO MARCAR
+- Finanzas, salud, calendario, SMS, audio, historial web
+- Datos de crash / diagnósticos (no hay Crashlytics ni Analytics de marketing)
+- Publicidad, ID de publicidad
+- Dirección física
+
+================================================================
+Después de publicar esta ficha, alinear la URL de política en:
+  Play Console → Política de privacidad → https://portal.wfsa.cl/privacidad.html
+  App Store Connect → igual, y soporte https://portal.wfsa.cl/soporte.html
+================================================================
